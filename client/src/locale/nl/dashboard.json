@@ -1,0 +1,12 @@
+{
+"dashboard": {
+    "case_type": "Zaaktype",
+    "count": "Aantal",
+    "cases": "Zaken",
+    "cases_by_type": "Zaken per zaaktype",
+    "total_cases": "Totaal aantal zaken",
+    "failed_to_load": "Kan grafiekgegevens niet laden",
+    "try_again": "Probeer het later opnieuw",
+    "failed_to_fetch_cases": "Kan zaken niet ophalen"
+}
+}

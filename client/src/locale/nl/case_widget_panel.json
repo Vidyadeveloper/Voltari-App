@@ -1,0 +1,14 @@
+{
+  "case_widget_panel": {
+  "case_details": "Zaakdetails",
+  "details_for_case_details": "Details voor zaakdetails...",
+  "related_cases": "Gerelateerde zaken",
+  "no_related_cases": "Geen gerelateerde zaken gevonden.",
+  "notes": "Notities",
+  "no_notes": "Geen notities beschikbaar.",
+  "documents": "Documenten",
+  "no_documents": "Geen documenten geüpload.",
+  "accounts": "Accounts",
+  "no_accounts": "Geen accounts gekoppeld."
+}
+}

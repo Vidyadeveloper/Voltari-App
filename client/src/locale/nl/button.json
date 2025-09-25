@@ -1,0 +1,12 @@
+{
+  "button": {
+    "submit": "Indienen",
+    "cancel": "Annuleren",
+    "delete": "Verwijderen",
+    "save": "Opslaan",
+    "next": "Volgende",
+    "back": "Terug",
+    "edit": "Bewerken",
+    "view": "Bekijken" 
+  }
+}

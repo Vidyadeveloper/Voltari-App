@@ -1,0 +1,14 @@
+{
+    "case_widget_panel": {
+    "case_details": "Case Details",
+    "details_for_case_details": "Details for Case Details...",
+    "related_cases": "Related Cases",
+    "no_related_cases": "No related cases found.",
+    "notes": "Notes",
+    "no_notes": "No notes available.",
+    "documents": "Documents",
+    "no_documents": "No documents uploaded.",
+    "accounts": "Accounts",
+    "no_accounts": "No accounts linked."
+    }
+}

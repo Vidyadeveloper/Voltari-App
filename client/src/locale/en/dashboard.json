@@ -1,0 +1,12 @@
+{
+    "dashboard": {
+        "case_type": "Case Type",
+        "count": "Count",
+        "cases": "Cases",
+        "cases_by_type": "Cases by Case Type",
+        "total_cases": "Total Cases",
+        "failed_to_load": "Failed to load chart data",
+        "try_again": "Please try again later",
+        "failed_to_fetch_cases": "Failed to fetch cases"
+    }
+}

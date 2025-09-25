@@ -1,0 +1,14 @@
+{
+  "personal": {
+    "first_name": "First Name",
+    "last_name": "Last Name",
+    "bsn": "BSN",
+    "date_of_birth": "Date of Birth",
+    "phone_number": "Phone Number",
+    "select_country": "Select",
+    "country_us": "+1 (US)",
+    "country_nl": "+31 (Netherlands)",
+    "country_uk": "+44 (UK)",
+    "country_in": "+91 (India)"
+  }
+}

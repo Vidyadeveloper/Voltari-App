@@ -1,0 +1,21 @@
+{
+    "case": {
+        "my_cases": "My Cases",
+        "switch_to_card_view": "Switch to Card View",
+        "switch_to_grid_view": "Switch to Grid View",
+        "case_id": "Case ID",
+        "name": "Name",
+        "case_type": "Case Type",
+        "status": "Status",
+        "no_cases": "No cases available.",
+        "urgency": "Urgency",
+        "created_by": "Created by",
+        "created_on": "Created on",
+        "registration": "Registration",
+        "review": "Review",
+        "completion": "Completion",
+        "error_saving_data": "Error saving data",
+        "save_failed_stay": "Save failed, staying on the current page.",
+        "stay_due_to_error": "Stay on the current page due to error"
+    }
+}

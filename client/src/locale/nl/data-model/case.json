@@ -1,0 +1,22 @@
+{
+    "case": {
+        "my_cases": "Mijn zaken",
+        "switch_to_card_view": "Overschakelen naar kaartweergave",
+        "switch_to_grid_view": "Overschakelen naar tabelweergave",
+        "case_id": "Zaak ID",
+        "name": "Naam",
+        "case_type": "Zaaktype",
+        "status": "Status",
+        "no_cases": "Geen zaken beschikbaar.",
+        "urgency": "Urgentie",
+        "created_by": "Aangemaakt door",
+        "created_on": "Aangemaakt op",
+        "registration": "Registratie",
+        "review": "Beoordeling",
+        "completion": "Voltooiing",
+        "error_saving_data": "Fout bij het opslaan van gegevens",
+        "save_failed_stay": "Opslaan mislukt, blijf op de huidige pagina.",
+        "stay_due_to_error": "Blijf op de huidige pagina vanwege een fout"
+            
+    }
+}

@@ -1,0 +1,8 @@
+{
+  "form": {
+    "submit": "Indienen",
+    "cancel": "Annuleren",
+    "loading": "Laden...",
+    "error": "Er is een fout opgetreden"
+  }
+}
