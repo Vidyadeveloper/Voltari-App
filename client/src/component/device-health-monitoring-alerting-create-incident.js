@@ -1,0 +1,45 @@
+
+import { FormDesignerComponent } from "../../../node_modules/@blaze-case-ai/blaze-engine/client/src/component/ux/form-designer-component.js";
+
+import "../../../node_modules/@blaze-case-ai/blaze-engine/client/src/component/ux/blaze-field-group.js";
+
+class DeviceHealthMonitoringAlertingCreateIncident extends FormDesignerComponent {
+   constructor() {
+    super();
+  }
+
+  connectedCallback() {
+    this.render();
+    super.connectedCallback();
+  }
+
+  render() {
+    this.shadowRoot.innerHTML = `
+      
+        <blaze-field-group id="fg-incident" context="incident"></blaze-field-group>
+      
+    `;
+
+    
+      const fgincident = this.shadowRoot.getElementById("fg-incident");
+            fgincident.context = "incident";
+      fgincident.model = {};
+      console.log("Assigning fields for context:", "incident", fgincident.fields);
+      fgincident.fields = [{"id":"incidentId","name":"Incident ID","type":"text","required":false,"description":"Unique identifier for the incident.","label":"Incident ID"},{"id":"title","name":"Title","type":"text","required":false,"description":"Short summary of the incident.","label":"Title"},{"id":"description","name":"Description","type":"text","required":false,"description":"Detailed description and context for the incident.","label":"Description"},{"id":"reportedBy","name":"Reported By","type":"text","required":false,"description":"User ID or system component that reported the incident.","label":"Reported By"},{"id":"severity","name":"Severity","type":"text","required":false,"description":"Severity level (e.g., low, medium, high).","label":"Severity"},{"id":"createdAt","name":"Created At","type":"date","required":false,"description":"Incident creation timestamp.","label":"Created At"}];
+      fgincident.data = { "incident": this._formData.incident || {} };
+   
+  }
+populateForm() {
+  
+    const fgincident = this.shadowRoot?.getElementById("fg-incident");
+    if (fgincident) {
+      fgincident.data = { "incident": this._formData["incident"] || {} };
+    }
+  
+}
+
+  
+}
+
+customElements.define("device-health-monitoring-alerting-create-incident", DeviceHealthMonitoringAlertingCreateIncident);
+export default DeviceHealthMonitoringAlertingCreateIncident;
