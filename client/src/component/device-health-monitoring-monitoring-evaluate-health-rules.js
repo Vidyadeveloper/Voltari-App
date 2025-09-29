@@ -77,7 +77,7 @@ class DeviceHealthMonitoringMonitoringEvaluateHealthRules extends FormDesignerCo
 
   // Update texts when language changes
   updateTexts() {
-    console.log(fg-telemetry+" fg-telemetry");
+    console.log(" fg-telemetry");
     const fgtelemetry = this.shadowRoot?.getElementById("fg-telemetry");
     if (fgtelemetry && fgtelemetry.fields) {
       fgtelemetry.fields = [
