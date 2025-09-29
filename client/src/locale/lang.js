@@ -4,15 +4,6 @@ let translations = {};
 
 // List all translation files you want to load (without .json extension)
 const TRANSLATION_FILES = [
-  "left_panel",
-  "dashboard",
-  "header",
-  "data-model/person",
-  "data-model/address", // add if you have address.json
-  "button",
-  "form",
-  "data-model/case",
-  "case_widget_panel",
   "data-model/telemetry",
 ];
 
@@ -54,4 +45,5 @@ export function t(section, key, fallback = "") {
 loadTranslations(currentLang);
 
 export { translations };
+
 
