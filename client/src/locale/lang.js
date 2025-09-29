@@ -19,8 +19,7 @@ const TRANSLATION_FILES = [
 function getTranslationFilePaths(lang) {
   console.log("Loading translation files for language:", lang);
   return TRANSLATION_FILES.map(
-    (file) => `/node_modules/@blaze-case-ai/blaze-engine/client/src/locale/${lang}/${file}.json`
-  );
+    (file) => `/client/src/locale/${lang}/${file}.json`);
 }
 
 function loadTranslations(lang) {
@@ -55,3 +54,4 @@ export function t(section, key, fallback = "") {
 loadTranslations(currentLang);
 
 export { translations };
+
