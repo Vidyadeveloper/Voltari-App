@@ -54,6 +54,12 @@ app.use(express.static(path.join(__dirname, "client/public")));
 // Serve node_modules from the root path
 app.use("/node_modules", express.static(path.join(__dirname, "node_modules")));
 
+// ✅ Serve custom translations like Blaze does
+app.use(
+  "/client/src/locale",
+  express.static(path.join(__dirname, "client/src/locale"))
+);
+
 // Route for the root of your application
 app.get("/", (req, res) => {
   res.sendFile(path.join(__dirname, "client/public/index.html"));
