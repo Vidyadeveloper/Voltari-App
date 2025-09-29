@@ -43,9 +43,10 @@ export function t(section, key, fallback = "") {
 }
 
 // On load, load default language and trigger lang-changed after fetch
-await loadTranslations(currentLang);
+ loadTranslations(currentLang);
 
 export { translations };
+
 
 
 
