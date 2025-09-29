@@ -1,9 +1,9 @@
 {
   "telemetry": {
     "telemetry_id": "Telemetry ID",
-    "deviceId": "Apparaat ID",
+    "deviceId": "Device ID",
     "timestamp": "Tijdstip",
-    "metric_name": "Metriek Naam",
+    "metric_name": "Metric Name",
     "metric_value": "Metriek Waarde",
     "raw_payload": "Ruwe Payload",
     "description": "Beschrijving",
