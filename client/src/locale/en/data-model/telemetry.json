@@ -1,0 +1,18 @@
+{
+  "telemetry": {
+    "telemetry_id": "Telemetry ID",
+    "deviceId": "Apparaat ID",
+    "timestamp": "Tijdstip",
+    "metric_name": "Metriek Naam",
+    "metric_value": "Metriek Waarde",
+    "raw_payload": "Ruwe Payload",
+    "description": "Beschrijving",
+    "start_date": "Startdatum",
+    "end_date": "Einddatum",
+    "created_by": "Aangemaakt door",
+    "created_at": "Aangemaakt op",
+    "status": "Status",
+    "version": "Versie",
+    "age_days": "Leeftijd (dagen)"
+  }
+}
