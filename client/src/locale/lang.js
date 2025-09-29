@@ -27,13 +27,19 @@ function loadTranslations(lang) {
     });
 }
 
-
-
+// Set a new language
 export function setLang(lang) {
   if (lang === currentLang) return;
   currentLang = lang;
+  localStorage.setItem(LANG_KEY, lang);
   loadTranslations(lang);
 }
+
+// export function setLang(lang) {
+//   if (lang === currentLang) return;
+//   currentLang = lang;
+//   loadTranslations(lang);
+// }
 
 export function getCurrentLang() {
   return currentLang;
@@ -47,6 +53,7 @@ export function t(section, key, fallback = "") {
 await loadTranslations(currentLang);
 
 export { translations };
+
 
 
 
