@@ -13,39 +13,22 @@ function getTranslationFilePaths(lang) {
     (file) => `/client/src/locale/${lang}/${file}.json`);
 }
 
-// function loadTranslations(lang) {
-//   const files = getTranslationFilePaths(lang);
-//   console.log(files);
-//   Promise.all(files.map((file) => fetch(file).then((res) => res.json())))
-//     .then((results) => {
-//       // Merge all loaded sections into one translations object
-//       translations = results.reduce((acc, obj) => {
-//         Object.assign(acc, obj);
-//         return acc;
-//       }, {});
-//       document.dispatchEvent(new Event("lang-changed"));
-//     });
-// }
-
-
-// Load translations **before any component uses them**
-export async function loadTranslations(lang) {
+function loadTranslations(lang) {
   const files = getTranslationFilePaths(lang);
-  try {
-    const results = await Promise.all(
-      files.map((file) => fetch(file).then((res) => res.json()))
-    );
-
-    translations = results.reduce((acc, obj) => Object.assign(acc, obj), {});
-    loaded = true;
-
-    // Notify all components that translations are ready
-    document.dispatchEvent(new Event("lang-changed"));
-    console.log(`✅ Translations loaded for language: ${lang}`);
-  } catch (err) {
-    console.error("❌ Error loading translations:", err);
-  }
+  console.log(files);
+  Promise.all(files.map((file) => fetch(file).then((res) => res.json())))
+    .then((results) => {
+      // Merge all loaded sections into one translations object
+      translations = results.reduce((acc, obj) => {
+        Object.assign(acc, obj);
+        return acc;
+      }, {});
+      document.dispatchEvent(new Event("lang-changed"));
+    });
 }
+
+
+
 export function setLang(lang) {
   if (lang === currentLang) return;
   currentLang = lang;
@@ -64,6 +47,7 @@ export function t(section, key, fallback = "") {
 await loadTranslations(currentLang);
 
 export { translations };
+
 
 
 
