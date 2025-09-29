@@ -11,6 +11,13 @@ class DeviceHealthMonitoringMonitoringEvaluateHealthRules extends FormDesignerCo
     this.render();
     super.connectedCallback();
 
+      // Wait for translations to be ready
+  if (!translationsReady()) {
+    document.addEventListener("lang-changed", () => this.updateTexts(), { once: true });
+  } else {
+    this.updateTexts();
+  }
+    
     // Listen for language changes
     document.addEventListener("lang-changed", () => this.updateTexts());
 
